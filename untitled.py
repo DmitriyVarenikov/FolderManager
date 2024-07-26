@@ -99,14 +99,25 @@ class Ui_Form(object):
 
         self.horizontalLayout.addWidget(self.btn_create_folder)
 
-        self.pushButton_4 = QPushButton(self.widget)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
-        self.pushButton_4.setSizePolicy(sizePolicy)
-        self.pushButton_4.setMinimumSize(QSize(25, 0))
-        self.pushButton_4.setMaximumSize(QSize(25, 16777215))
+        self.btn_update = QPushButton(self.widget)
+        self.btn_update.setObjectName(u"btn_update")
+        sizePolicy.setHeightForWidth(self.btn_update.sizePolicy().hasHeightForWidth())
+        self.btn_update.setSizePolicy(sizePolicy)
+        self.btn_update.setMinimumSize(QSize(25, 0))
+        self.btn_update.setMaximumSize(QSize(25, 16777215))
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/rotate-cw.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_update.setIcon(icon1)
 
-        self.horizontalLayout.addWidget(self.pushButton_4)
+        self.horizontalLayout.addWidget(self.btn_update)
+
+        self.pushButton = QPushButton(self.widget)
+        self.pushButton.setObjectName(u"pushButton")
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/eye.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton.setIcon(icon2)
+
+        self.horizontalLayout.addWidget(self.pushButton)
 
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
@@ -147,8 +158,12 @@ class Ui_Form(object):
         self.btn_back.setText(QCoreApplication.translate("Form", u"<", None))
         self.btn_next.setText(QCoreApplication.translate("Form", u">", None))
         self.btn_create_folder.setText("")
-        self.pushButton_4.setText(QCoreApplication.translate("Form", u"dir", None))
+        self.btn_update.setText("")
+        self.pushButton.setText("")
         ___qtreewidgetitem = self.treeWidget.headerItem()
+        ___qtreewidgetitem.setText(3, QCoreApplication.translate("Form", u"\u0420\u0430\u0437\u043c\u0435\u0440", None));
+        ___qtreewidgetitem.setText(2, QCoreApplication.translate("Form", u"\u0422\u0438\u043f", None));
+        ___qtreewidgetitem.setText(1, QCoreApplication.translate("Form", u"\u0414\u0430\u0442\u0430", None));
         ___qtreewidgetitem.setText(0, QCoreApplication.translate("Form", u"\u0418\u043c\u044f", None));
     # retranslateUi
 

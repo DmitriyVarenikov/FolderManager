@@ -1,5 +1,11 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icons/rotate-cw.svg</file>
+    <file>icons/eye-off.svg</file>
+    <file>icons/eye.svg</file>
+    <file>icons/folder.svg</file>
+    <file>icons/folder-plus.svg</file>
+    <file>icons/feather.svg</file>
     <file>icons/folder-plus.svg</file>
     <file>icons/folder.svg</file>
     <file>icons/feather.svg</file>
